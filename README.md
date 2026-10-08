@@ -9,7 +9,7 @@ A fast, GPU-rendered terminal for macOS, written in Rust.
 
 Open the disk image and drag termin8 into Applications. Requires macOS 11 or later.
 
-The 0.4.0 Apple Silicon image on this page is not notarized yet.
+The 0.4.0 Apple Silicon image is signed with Developer ID. It is not notarized yet.
 
 ## What you get
 
