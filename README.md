@@ -1,32 +1,34 @@
+the last terminal you';; ever need.
+
 # termin8
 
-A fast, GPU-rendered terminal for macOS, written in Rust.
+termin8 is a modern terminal app for macOS that feels faster and more capable than the built-in Terminal.
 
-**[Download the latest release](../../releases/latest)** — pick the disk image for your Mac:
+What it does
+- Renders text and images smoothly using your Mac's GPU so scrolling and animations feel very fast and fluid.
+- Shows images directly inside the terminal. When a command or link produces an image (a photo, a preview, a rendered chart), termin8 displays it inline instead of forcing you to open a separate image viewer.
+- Keeps your sessions alive even after you close the window. Your shells and running programs continue to run in the background, and when you reopen the app everything — including scrollback — is restored where you left it.
+- Includes a lightweight, text-first web browser inside a tab. You can read pages, follow links and fill simple forms without opening a full web browser.
+- Lets you quickly find actions, settings and commands with a single command palette. Use it to open tabs, change preferences, or run built-in tools without digging through menus.
+- Lists and reconnects to remote sessions or servers from the menu bar so joining a session is quick and straightforward.
+- Provides convenient keyboard shortcuts for common tasks (searching scrollback, jumping between prompts, and more) so you spend less time reaching for the mouse.
+- Is designed to be small, efficient and unobtrusive: a single native app that focuses on speed and clarity.
 
-- `termin8-VERSION-apple-silicon.dmg` — M1, M2, M3, M4 and later
-- `termin8-VERSION-intel.dmg` — Intel Macs
+Getting started
+1. Download the latest release for your Mac from the Releases page.
+   - Use the Apple Silicon image on M1/M2/M3/M4 and later machines.
+   - Use the Intel image on older Intel Macs.
+2. Open the disk image (.dmg) and drag termin8 into your Applications folder.
+3. Requires macOS 11 or later.
 
-Open the disk image and drag termin8 into Applications. Requires macOS 11 or later.
+Security and authenticity
+- Each release includes a SHA-256 checksum file (SHA256SUMS.txt). Verify downloads with:
+  shasum -a 256 -c SHA256SUMS.txt
+- Some releases may be signed with a Developer ID; notarization status is noted on each release.
 
-The 0.4.0 Apple Silicon image is signed with Developer ID. It is not notarized yet.
+License and third-party software
+- termin8 is free to use but not open source. See LICENSE.txt for the legal terms.
+- Open-source components included with the app are listed in THIRD-PARTY-NOTICES.txt inside the application bundle.
 
-## What you get
-
-- **Graphics in the terminal.** Inline images from the kitty graphics protocol, sixel and iTerm2 inline images — `chafa`, `img2sixel`, `imgcat`, `timg`, `yazi` previews and friends just work.
-- **Sessions that survive closing the window.** Shells and agents keep running when you quit; reopen termin8 and everything is where you left it, scrollback included.
-- **A built-in web browser.** Read pages, search, follow links and fill simple forms inside a tab — no Chrome, no JavaScript. Image links open as real images.
-- **One command palette.** ⌘K finds every action, setting and tool. ⌘F finds text in the scrollback.
-- **Servers.** The menu-bar icon lists sessions and OMUX servers. Rejoin one, or start another, without a separate multiplexer.
-- **Ouros, if you want it.** ⌘K → Ouros account signs in at ouros.md. The home bar can then ask the gateway for a command. You still press Enter. No account, no network: the terminal is the same.
-- **Smooth and light.** Metal rendering, synchronized output, a single small native app. Shells that emit OSC 133 can jump prompts with ⌘↑ and ⌘↓.
-
-termin8 is free to use. It is not open source; see [LICENSE.txt](LICENSE.txt). Open-source components it includes are listed in `THIRD-PARTY-NOTICES.txt` inside the app.
-
-## Verify your download
-
-Each release lists SHA-256 checksums in `SHA256SUMS.txt`:
-
-```sh
-shasum -a 256 -c SHA256SUMS.txt
-```
+Want help or more detail?
+If you’d like the README to emphasize usage examples, keyboard shortcuts, or a short walkthrough for first-time users, I can add a quick start section and a few short examples next.
