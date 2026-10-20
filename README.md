@@ -1,3 +1,7 @@
+Download the current Apple Silicon release: [Termin8 0.4.5 ZIP](https://github.com/janestreetshiller/termin8-releases/releases/download/v0.4.5/termin8-0.4.5-apple-silicon.zip). Intel Macs: [Termin8 0.4.3](https://github.com/janestreetshiller/termin8-releases/releases/tag/v0.4.3).
+
+Open the ZIP and move termin8.app to Applications. The Apple Silicon build is Developer ID signed but not notarized. If macOS blocks the first launch, use System Settings -> Privacy & Security -> Open Anyway.
+
 the last terminal you';; ever need.
 
 # termin8
